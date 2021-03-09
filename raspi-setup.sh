@@ -16,16 +16,6 @@ echo '@xset s off' | sudo tee -a /etc/xdg/lxsession/LXDE-pi/autostart
 echo '@xset -dpms' | sudo tee -a /etc/xdg/lxsession/LXDE-pi/autostart
 
 #
-# Enable VNC
-#
-
-sudo apt install realvnc-vnc-server -y
-systemctl enable vncserver-x11-serviced.service &&
-systemctl start vncserver-x11-serviced.server
-echo "VNC has been enabled for this machine."
-
-
-#
 # Create doterrala
 #
 
@@ -37,6 +27,17 @@ read -p "Password for doterrala:" -r -s PASS
 sudo useradd -p $(openssl passwd -1 $PASS) doterrala
 
 sudo usermod -G adm,dialout,cdrom,sudo,audio,video,plugdev,games,input,netdev,lpadmin,gpio,i2c,spi doterrala
+
+
+
+#
+# Enable VNC
+#
+
+sudo apt install realvnc-vnc-server -y
+sudo systemctl enable vncserver-x11-serviced.service &&
+sudo systemctl start vncserver-x11-serviced.server
+echo "VNC has been enabled for this machine."
 
 #
 # Disable pi user
