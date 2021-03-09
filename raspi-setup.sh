@@ -1,7 +1,5 @@
 #!/bin/bash -e
 
-#
-
 # Set locale
 echo -e "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
@@ -55,12 +53,12 @@ sudo rm /etc/sudoers.d/010_pi-nopasswd
 
 
 # Prompt for Hostname - Make sure this is the last thing to do!
-read -p "Please input the hostname of the machine:" -r -s HOSTNAME
+# read -p "Please input the hostname of the machine:" -r -s HOSTNAME
 
-sudo hostnamectl set-hostname $HOSTNAME
+# sudo hostnamectl set-hostname $HOSTNAME
 
-echo "Hostname has been changed successfully!" 
-echo "Close and reopen terminal once script finishes to verify the change."
+# echo "Hostname has been changed successfully!" 
+# echo "Close and reopen terminal once script finishes to verify the change."
 
 # Reboot
 echo "This machine will reboot in 5 seconds..."
