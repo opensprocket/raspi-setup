@@ -2,7 +2,7 @@
 
 Create account (enter password when prompted):
 ```
-sudo useradd doterrala
+sudo adduser doterrala
 ```
 Update Group membership (one line):
 ```

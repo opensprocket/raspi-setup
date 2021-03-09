@@ -1,9 +1,5 @@
 #!/bin/bash -e
 
-# Set locale
-echo -e "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
-sudo locale-gen
-
 # Update, remove bloat + install apps
 sudo apt update -y
 sudo apt remove thonny geany -y
@@ -12,8 +8,10 @@ sudo apt autoremove -y
 
 
 # Disable screensleep
+echo "Disabling screensleep..."
 echo '@xset s off' | sudo tee -a /etc/xdg/lxsession/LXDE-pi/autostart
 echo '@xset -dpms' | sudo tee -a /etc/xdg/lxsession/LXDE-pi/autostart
+echo "Disabled screensleep..."
 
 # Reboot
 echo "This machine will reboot in 5 seconds..."
