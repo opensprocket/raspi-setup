@@ -1,4 +1,6 @@
-## doterrala Creation
+# Post-script config
+
+## Secondary Admin Creation
 
 Create account (enter password when prompted):
 ```
