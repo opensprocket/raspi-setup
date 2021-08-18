@@ -18,7 +18,7 @@ echo '@xset -dpms' | sudo tee -a /etc/xdg/lxsession/LXDE-pi/autostart
 echo "Disabled screensleep..."
 
 # Make reconfigure.sh executable
-sudo chmod +x ~/raspi-setup/reconfigure.sh
+sudo chmod +x /pi/raspi-setup/reconfigure.sh
 
 echo "Make sure to set the hostname manually using raspi-config!"
 
