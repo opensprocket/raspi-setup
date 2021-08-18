@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
 # Configure .bash_aliases
-sudo touch /pi/.bash_aliases
-echo 'alias cls="clear"' | sudo tee -a /pi/.bash_aliases
-echo 'alias ll="ls -al"' | sudo tee -a /pi/.bash_aliases
+sudo touch /home/pi/.bash_aliases
+echo 'alias cls="clear"' | sudo tee -a /home/pi/.bash_aliases
+echo 'alias ll="ls -al"' | sudo tee -a /home/pi/.bash_aliases
 
 # Update, remove bloat + install apps
 sudo apt update -y
