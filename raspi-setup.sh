@@ -8,7 +8,7 @@ echo 'alias ll="ls -al"' | sudo tee -a /home/pi/.bash_aliases
 # Update, remove bloat + install apps
 sudo apt update -y
 sudo apt remove thonny geany -y
-sudo apt install libreoffice syncthing syncthing-gtk tmux -y --no-install-recommends
+sudo apt install libreoffice syncthing syncthing-gtk tmux ntfs-3g -y --no-install-recommends
 sudo apt autoremove -y
 
 # Disable screensleep
