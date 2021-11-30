@@ -30,7 +30,7 @@ do_boot_splash 1          # Disable the splash screen
 do_overscan 1             # Disable overscan
 do_camera 1               # Disable the camera
 do_ssh 0                  # Enable remote ssh login
-do_vnc 0                  # Enable VNC login
+do_vnc 1                  # Enable VNC login
 do_spi 1                  # Disable spi bus
 do_i2c 1                  # Disable the i2c bus
 do_serial 1               # Disable the RS232 serial bus
