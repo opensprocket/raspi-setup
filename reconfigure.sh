@@ -47,10 +47,10 @@ do_audio 0                # Auto select audio output device
 # System Configuration
 do_configure_keyboard us                     # Specify US Keyboard
 #do_hostname rpi-test                        # Set hostname to 'rpi-test'
-do_wifi_country US                           # Set wifi country as Australia
+do_wifi_country US                           # Set wifi country as United States
 #do_wifi_ssid_passphrase wifi_name password  # Set wlan0 network to join 'wifi_name' network using 'password'
 do_change_timezone America/Denver            # Change timezone to Devner
-do_change_locale en_US.UTF-8                 # Set language to American English
+do_change_locale en_US.UTF-8                 # Set language to American English UTF-8
 
 #Don't add any raspi-config configuration options after 'END' line below & don't remove 'END' line
 END
