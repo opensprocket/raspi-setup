@@ -19,6 +19,7 @@ echo "Disabled screensleep..."
 
 # Make reconfigure.sh executable
 sudo chmod +x /home/pi/raspi-setup/reconfigure.sh
+sudo chmod +x /home/pi/raspi-setup/kiosk-configure.sh
 sudo ./reconfigure.sh
 
 echo "Make sure to set the hostname manually using raspi-config!"
