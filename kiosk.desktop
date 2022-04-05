@@ -1,0 +1,2 @@
+[Desktop Entry]
+Exec=chromium-browser --noerrdialogs --disable-infobars --kiosk URLGOESHERE  &
